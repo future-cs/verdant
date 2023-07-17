@@ -1,34 +1,34 @@
 import React, { useEffect, useState } from "react";
 
 function MyComponentC({ solution }) {
-  console.log(solution);
-  const [content, setContent] = useState(null);
+  // console.log(solution);
+  // const [content, setContent] = useState(null);
 
-  useEffect(() => {
-    fetchDataB();
-  }, []);
+  // useEffect(() => {
+  //   fetchDataB();
+  // }, []);
 
-  const fetchDataB = async () => {
-    try {
-      // const responseB = await fetch(
-      //   "https://perenual.com/api/species-list?page=1&key=sk-Sw6j64b3059ecc0811570&"
-      // );
-      // const responseB = await fetch(
-      //   "https://perenual.com/api/species-list?key=sk-Sw6j64b3059ecc0811570&&page=337"
-      // );
-      const responseB = await fetch(
-        "https://perenual.com/api/species/details/1?key=sk-Sw6j64b3059ecc0811570"
-      );
-      // const responseB = await fetch(
-      //   "https://perenual.com/api/species-care-guide-list?key=sk-Sw6j64b3059ecc0811570"
-      // );
-      const jsonDataB = await responseB.json();
+  // const fetchDataB = async () => {
+  //   try {
+  // const responseB = await fetch(
+  //   "https://perenual.com/api/species-list?page=1&key=sk-Sw6j64b3059ecc0811570&"
+  // );
+  // const responseB = await fetch(
+  //   "https://perenual.com/api/species-list?key=sk-Sw6j64b3059ecc0811570&&page=337"
+  // );
+  // const responseB = await fetch(
+  //   "https://perenual.com/api/species/details/1?key=sk-Sw6j64b3059ecc0811570&"
+  // );
+  // const responseB = await fetch(
+  //   "https://perenual.com/api/species-care-guide-list?key=sk-Sw6j64b3059ecc0811570"
+  // );
+  //     const jsonDataB = await responseB.json();
 
-      setContent(jsonDataB);
-    } catch (error) {
-      console.log("Error fetching data:", error);
-    }
-  };
+  //     setContent(jsonDataB);
+  //   } catch (error) {
+  //     console.log("Error fetching data:", error);
+  //   }
+  // };
 
   // function printTest() {
   //   console.log("DATA");
@@ -42,7 +42,7 @@ function MyComponentC({ solution }) {
   function handleSolution() {
     // setContent(content.data[0].id);
     console.log(" __________ CLICK _____________");
-    console.log(content);
+    // console.log(content);
   }
 
   return (
@@ -149,7 +149,7 @@ function MyComponentC({ solution }) {
 }
 
 function MyComponentB({ solutionB, handleSolution }) {
-  console.log(solutionB);
+  // console.log(solutionB);
 
   // console.log(data);
   if (solutionB) {

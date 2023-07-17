@@ -11,19 +11,19 @@ function MyComponent({ solution }) {
   //   setContent(data.data[0].id);
   // }
 
-  console.log(solution.data[0].common_name);
+  // console.log(solution.data[0].common_name);
   return (
     <div className="component">
       <div className="component-header">
         <div className="component-header-div--border">
           <div>
             <h2 className="heading-secondary">
-              {solution.data[0].common_name}
+              {solution.data[26].common_name}
             </h2>
-            <p className="subheading">{solution.data[0].scientific_name[0]}</p>
-            <p className="subheading">_id = {solution.data[0].id}</p>
+            <p className="subheading">{solution.data[26].scientific_name[0]}</p>
+            <p className="subheading">_id = {solution.data[26].id}</p>
             <p className="subheading">
-              image URL = {solution.data[0].default_image.original_url}
+              image URL = {solution.data[26].default_image.original_url}
             </p>
           </div>
           <img
@@ -38,7 +38,7 @@ function MyComponent({ solution }) {
           <div className="large-img">
             <img
               className="component-img--large"
-              src={solution.data[0].default_image.original_url}
+              src={solution.data[26].default_image.original_url}
               alt="Computer Drawing"
             ></img>
           </div>
