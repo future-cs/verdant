@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import apiExampleID from "./apiExample";
-
-//
-const idFormatCall = apiExampleID;
-console.log(idFormatCall);
 
 //
 function ComponentSectionContent() {
