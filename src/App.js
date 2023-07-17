@@ -3,10 +3,9 @@ import "./general.css";
 
 import ComponentSectionContent from "./ComponentSection";
 import InfoComponent from "./Info";
-import PageVisualDivision from "./PageDivision";
+
 import CTA from "./CTA";
 import FooterComponent from "./Footer";
-import { render } from "@testing-library/react";
 
 function App() {
   return <Container />;
@@ -70,9 +69,14 @@ function Hero() {
         <div className="hero-div--right">
           <img
             className="hero-img"
-            src="img/8149C778-B740-42A8-9AEA-63613A791D95.png"
+            src="img/9251D335-BFF2-4D65-8135-B945C749803E.png"
             alt="Computer Drawing"
           ></img>
+          {/* <img
+            className="hero-img"
+            src="img/8149C778-B740-42A8-9AEA-63613A791D95.png"
+            alt="Computer Drawing"
+          ></img> */}
         </div>
       </div>
       <div className="hero-bottom">
