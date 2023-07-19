@@ -9,8 +9,7 @@ function CTA() {
         <div className="cta-inner-div">
           <div className={ctaMessage === false ? "footer-cta-left" : "hidden"}>
             <h3 className="cta-h3">
-              Sign up to receive an daily email form yout favorire botanical
-              website.
+              Sign up to receive an daily email from us.
             </h3>
             <div className="footer-cta-signup">
               <input placeholder="john.smith@email.com"></input>
