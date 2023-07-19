@@ -2,10 +2,11 @@
 /* CTA */
 
 .cta-section {
-  padding: 9.6rem 6.2rem;
+  padding: 9.6rem 0;
 }
 
 .cta-div {
+  max-width: 114rem;
   margin: 0 auto;
   padding: 1.2rem;
   background-color: rgb(3, 77, 42, 0.5);
@@ -81,6 +82,9 @@
 /* BELOW 1200px (Landscape Tablets) */
 /*****************************/
 @media (max-width: 67em) {
+  .cta-div {
+    max-width: 100rem;
+  }
   .footer-cta-left,
   .footer-cta-right {
     padding: 2.4rem;
