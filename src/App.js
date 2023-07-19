@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./general.css";
-
-import ComponentSectionContent from "./ComponentSection";
-import InfoComponent from "./Info";
+import apiExampleListCall from "./apiExample.js";
+import NavComponent from "./Nav";
 
 import CTA from "./CTA";
 import FooterComponent from "./Footer";
@@ -12,90 +11,91 @@ function App() {
 }
 
 function Container() {
-  const [renderPlant, setRenderPlant] = useState(false);
   return (
     <>
       <div className="container">
+        <NavComponent />
         <Hero />
-        <QuickButton
-          setRenderPlant={setRenderPlant}
-          renderPlant={renderPlant}
-        />
-        {renderPlant === true ? (
-          <ComponentSectionContent />
-        ) : (
-          <h1 style={{ textAlign: "center" }}>Render a plant</h1>
-        )}
-        <InfoComponent />
-        <InfoComponent />
-        <CTA />
+        <Collection />
+
+        <CTA id="signup" />
         <FooterComponent />
       </div>
     </>
   );
 }
 
-function QuickButton({ renderPlant, setRenderPlant }) {
-  return (
-    <section className={renderPlant === false ? "temporary-button" : "hidden"}>
-      <div className="component-header">
-        <div className="component-header-div--border">
-          <div>
-            <h2 className="heading-secondary">MOST REARCHED SPECIES</h2>
+function Collection() {
+  const idDataC = true;
+
+  if (!idDataC) {
+    return <h2 className="heading-secondary">LOADING</h2>;
+  }
+
+  if (idDataC) {
+    return (
+      <section className="section-component">
+        <div className="component">
+          <span className="collection-subhead">Today's article presents:</span>
+          <div className="collection-header">
+            <div className="collection-header-div--border">
+              <div>
+                <h2 className="heading-secondary">Our Collection</h2>
+              </div>
+            </div>
           </div>
-          <button
-            className="temporary-button--btn"
-            onClick={() => setRenderPlant(true)}
-          >
-            DISCOVER
-          </button>
+          {/* s */}
+          <div className="collection-grid">
+            {apiExampleListCall.data.map((item) => (
+              <div className="collection-item" key={item.id}>
+                <p className="collection-item--text">
+                  {item.common_name.charAt(0).toUpperCase() +
+                    item.common_name.slice(1)}
+                </p>
+                <img
+                  className="component-img--medium"
+                  src={
+                    item.default_image
+                      ? item.default_image.small_url
+                      : "img/9251D335-BFF2-4D65-8135-B945C749803E.png"
+                  }
+                  alt={item.id}
+                ></img>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 }
+
 function Hero() {
   return (
-    <section className="hero-section">
+    <section className="section-hero">
       <div className="hero grid">
         <div className="hero-div--left">
-          <div className="test">
-            <h1 className="heading-primary">
-              <span className="heading-primary--first-letter">V</span>erdant
-            </h1>
-            <p>Get to Know One New Plant Every Day!</p>
+          <h1 className="heading-primary">Verdant</h1>
+          <span className="hero-subhead">Dive into the botanical world.</span>
+          <p>
+            Every day a new article with a different species and it's
+            particularities, FAQs and more.
+          </p>
+          <div className="hero-signup-div">
+            <a href="#signup" className="hero-signup">
+              SIGN UP
+            </a>
           </div>
         </div>
         <div className="hero-div--right">
-          <img
-            className="hero-img"
-            src="img/9251D335-BFF2-4D65-8135-B945C749803E.png"
-            alt="Computer Drawing"
-          ></img>
-          {/* <img
-            className="hero-img"
-            src="img/8149C778-B740-42A8-9AEA-63613A791D95.png"
-            alt="Computer Drawing"
-          ></img> */}
-        </div>
-      </div>
-      <div className="hero-bottom">
-        <div className="hero-bottom-text">
-          <h2>Dive into the botanical world.</h2>
-          <p>More then 1000 species listed.</p>
-          <p>
-            Ruby Slippers Amur Maple is an amazing plant species that can
-            survive in extreme conditions. It has a unique vertical habit,
-            clockwise foliage, and bright red stems which makes it a great
-            ornamental tree..
-          </p>
-        </div>
-        <div>
-          <img
-            className="hero-img"
-            src="img/9251D335-BFF2-4D65-8135-B945C749803E.png"
-            alt="Computer Drawing"
-          ></img>
+          <div className="hero-small-img">
+            {" "}
+            <img
+              className="hero-img"
+              src="img/1.png"
+              alt="Computer Drawing"
+            ></img>
+          </div>
         </div>
       </div>
     </section>

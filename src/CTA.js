@@ -4,7 +4,7 @@ function CTA() {
   const [ctaMessage, setCtaMessage] = useState(false);
 
   return (
-    <section className="cta-section">
+    <section className="cta-section" id="signup">
       <div className="cta-div">
         <div className="cta-inner-div">
           <div className={ctaMessage === false ? "footer-cta-left" : "hidden"}>
@@ -29,7 +29,7 @@ function CTA() {
             <div className="footer-cta-inner-right">
               <img
                 className="cta-img"
-                src="img/cta-img-background.png"
+                src="img/2.png"
                 alt="Computer Drawing"
               ></img>
             </div>
