@@ -29,7 +29,7 @@ function CTA() {
             <div className="footer-cta-inner-right">
               <img
                 className="cta-img"
-                src="img/2.png"
+                src="img/2.webp"
                 alt="Computer Drawing"
               ></img>
             </div>

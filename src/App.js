@@ -92,7 +92,7 @@ function Hero() {
             {" "}
             <img
               className="hero-img"
-              src="img/1.png"
+              src="img/1.webp"
               alt="Computer Drawing"
             ></img>
           </div>
