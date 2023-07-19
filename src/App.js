@@ -1,5 +1,8 @@
 // import React, { useState } from "react";
 import "./general.css";
+import "./Hero.css";
+import "./MainComponent.css";
+import "./CTA.css";
 import apiExampleListCall from "./apiExample.js";
 import NavComponent from "./Nav";
 
@@ -36,12 +39,10 @@ function Collection() {
     return (
       <section className="section-component">
         <div className="component">
-          <span className="collection-subhead">Today's article presents:</span>
           <div className="collection-header">
-            <div className="collection-header-div--border">
-              <div>
-                <h2 className="heading-secondary">Our Collection</h2>
-              </div>
+            <span className="collection-subhead">Our Collection</span>
+            <div>
+              <h2 className="heading-secondary">Inspirations</h2>
             </div>
           </div>
           {/* s */}
@@ -76,11 +77,11 @@ function Hero() {
       <div className="hero grid">
         <div className="hero-div--left">
           <h1 className="heading-primary">Verdant</h1>
-          <span className="hero-subhead">Dive into the botanical world.</span>
-          <p>
-            Every day a new article with a different species and it's
-            particularities, FAQs and more.
-          </p>
+          <div>
+            <span className="hero-subhead">Dive into the botanical world.</span>
+            <p>Get inspired to create your own garden.</p>
+          </div>
+
           <div className="hero-signup-div">
             <a href="#signup" className="hero-signup">
               SIGN UP
