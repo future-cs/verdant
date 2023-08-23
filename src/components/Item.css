@@ -1,0 +1,32 @@
+/* ****************************************************** ITEM */
+
+.item {
+  background-color: #e6edea;
+  /* padding: 3.6rem; */
+  border-radius: 10px;
+  overflow: hidden;
+  /* border-top: 5px solid #9ab8aa; */
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* gap: 2.4rem; */
+  transition: all 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+  background-color: #9ab8aa;
+}
+.item p {
+  font-size: 2.4rem;
+  font-style: italic;
+  color: #034d2a;
+  /* text-align: center; */
+  padding: 2.4rem;
+}
+
+.item-icon {
+  font-size: 3.6rem;
+  color: #034d2a;
+}

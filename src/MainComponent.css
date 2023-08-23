@@ -74,6 +74,9 @@
 
 /* ****************************************************** COMPONENT */
 /* COMPONENT */
+.component-fullViewID {
+  min-height: 100vh;
+}
 .component-subhead {
   color: #034d2a;
   font-size: 2.4rem;
