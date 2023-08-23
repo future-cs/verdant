@@ -16,7 +16,9 @@ export default function ItemFullviewCard({ content }) {
         ></img>
       </div>
       <div className="item-fullview-content">
-        <HiHeart />
+        <span>
+          <HiHeart /> <HiOutlineHeart />
+        </span>
         <h3>{content.question}</h3>
         <p>{content.answer}</p>
         <div className="item-fullview-content-tags">

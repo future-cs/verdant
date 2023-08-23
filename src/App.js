@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./general.css";
 import "./Hero.css";
 import "./MainComponent.css";
