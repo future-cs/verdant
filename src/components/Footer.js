@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 function FooterComponent() {
   return (
     <section className="section-footer">
@@ -33,8 +35,8 @@ function FooterComponent() {
         </div>
         <div className="copyright">
           <p>
-            Copyright &copy; <span>2023</span> by Gustavo Oliveira, Inc. All
-            rights reserved.
+            Copyright &copy; <span>2023</span> by Verdant, Inc. All rights
+            reserved.
           </p>
         </div>
       </div>

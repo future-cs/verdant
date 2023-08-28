@@ -12,6 +12,10 @@ function CTA() {
             <h3 className="cta-h3">
               Sign up to receive an daily email from us.
             </h3>
+            <p className="cta-p">
+              Join us in nurturing not only the plants in your garden but also
+              your own knowledge and appreciation of the natural world.
+            </p>
             <div className="footer-cta-signup">
               <input placeholder="john.smith@email.com"></input>
               <button

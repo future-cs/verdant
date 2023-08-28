@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* *************************************** MAIN - SHARED */
+.section-component {
+  padding: 9.6rem 0;
+}
+.component {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.heading-secondary {
+  font-size: 7.2rem;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+  color: #4f826a;
+}
+
+/* ****************** */
+/* GENERAL COMPONENTS */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+/* GENERAL QUERIES */
+
+/*****************************/
+/* BELOW 1344px (Smaller desktops) */
+/*****************************/
+
+@media (max-width: 84em) {
+  /* NONE */
+}
+
+/*****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*****************************/
+
+@media (max-width: 75em) {
+  html {
+    /*  9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+}
+
+/*****************************/
+/* BELOW 944px (Tablets) */
+/*****************************/
+
+@media (max-width: 59em) {
+  html {
+    /*  8px / 16px = 50% */
+    font-size: 50%;
+  }
+}
+
+/*****************************/
+/* BELOW 704px (Smaller Tablets) */
+/*****************************/
+
+@media (max-width: 44em) {
+  /* NONE */
+}
+
+/*****************************/
+/* BELOW 544px (Phones) */
+/*****************************/
+
+@media (max-width: 34em) {
+}

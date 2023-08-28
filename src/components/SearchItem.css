@@ -1,0 +1,90 @@
+/* ****************************************************** ITEM */
+
+.search-item {
+  background-color: #f3f6f5;
+  color: #4f826a;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  transition: all 0.3s;
+}
+
+.search-item:hover {
+  background-color: #e6edea;
+  color: #034d2a;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.text-div {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.search-item h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.search-item p {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #034d2a;
+}
+
+.item-icon {
+  font-size: 2.4rem;
+  color: #034d2a;
+}
+
+.component-img--medium {
+  width: 100%;
+}
+
+/*****************************/
+/* BELOW 1344px (Smaller desktops) */
+/*****************************/
+
+@media (max-width: 84em) {
+  /* NONE */
+}
+/*****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*****************************/
+
+@media (max-width: 75em) {
+  .search-item h3 {
+    font-size: 2rem;
+  }
+}
+
+/*****************************/
+/* BELOW 944px (Tablets) */
+/*****************************/
+
+@media (max-width: 59em) {
+  /* NONE */
+}
+
+/*****************************/
+/* BELOW 704px (Smaller Tablets) */
+/*****************************/
+
+@media (max-width: 44em) {
+  /* NONE */
+}
+
+/*****************************/
+/* BELOW 544px (Phones) */
+/*****************************/
+
+@media (max-width: 34em) {
+  /* NONE */
+}

@@ -1,0 +1,245 @@
+/* ****************************************************** NAV */
+/* NAV */
+
+.header {
+  padding: 1.2rem 2.4rem;
+  border-bottom: 0.5px solid #1c5f3f;
+
+  background-color: #9ab8aa;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 8rem;
+  border-bottom: 0.5px solid #1c5f3f;
+}
+
+.nav-mobile-div {
+  display: none;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.nav-img {
+  width: 5rem;
+}
+
+.logo-text {
+  font-size: 2.4rem;
+  color: #034d2a;
+  font-weight: 400;
+  text-align: center;
+}
+
+.nav--ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.nav--li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav--li a:link,
+.nav--li a:visited,
+.nav-mobile-btn {
+  padding: 0.8rem 1.6rem;
+
+  background-color: #cddbd4;
+  color: #034d2a;
+  border: none;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.nav--li a:hover,
+.nav--li a:active,
+.nav-mobile-btn:hover,
+.nav-mobile-btn:active {
+  background-color: #034d2a;
+  color: #e6edea;
+}
+
+.nav-mobile-btn {
+  display: flex;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+/* ****************************************************** SEARCH */
+
+.search-div {
+  display: flex;
+  gap: 0.6rem;
+
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0.6rem;
+}
+.search-div input {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+
+  font-size: 1.8rem;
+  width: 50vw;
+  background-color: #cddbd4;
+}
+.search-div button {
+  padding: 0.6rem 1.8rem;
+  font-size: 2rem;
+
+  border: none;
+  border-radius: 4px;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  background-color: #cddbd4;
+  color: #034d2a;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-div button:hover,
+.search-div button:active {
+  background-color: #034d2a;
+  color: #e6edea;
+}
+
+/*****************************/
+/* BELOW 1344px (Smaller desktops) */
+/*****************************/
+
+@media (max-width: 84em) {
+  .search-div input {
+    width: 40vw;
+  }
+}
+
+/*****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*****************************/
+
+@media (max-width: 75em) {
+  .header {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .logo-text {
+    font-size: 2rem;
+    color: #034d2a;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+/*****************************/
+/* BELOW 944px (Tablets) */
+/*****************************/
+
+@media (max-width: 59em) {
+  .search-div input {
+    width: 40vw;
+  }
+}
+
+/*****************************/
+/* BELOW 704px (Smaller Tablets) */
+/*****************************/
+
+@media (max-width: 44em) {
+  .nav {
+    display: none;
+  }
+
+  .nav-mobile-div {
+    display: block;
+    z-index: 10;
+  }
+  .nav-mobile {
+    display: flex;
+    position: absolute;
+
+    height: 100vh;
+    width: 100%;
+    top: 0rem;
+    left: 0rem;
+    transform: translateX(0%);
+    transition: all 0.5s linear;
+    z-index: 1;
+
+    background-color: rgba(154, 184, 170, 0.9);
+
+    padding: 2.4rem;
+
+    /*  1 - Hide visually */
+    opacity: 1;
+    /*  2 - Make it ulaccessible to mouse and keyboard */
+    pointer-events: auto;
+    /*  3 - Hide from screen readers */
+    visibility: visible;
+  }
+
+  .nav-mobile--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+
+  .nav--ul {
+    /* display: grid; */
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+    width: 100%;
+    padding: 9.6rem 0;
+  }
+
+  .nav--li a:link,
+  .nav--li a:visited,
+  .nav-mobile-btn {
+    font-size: 2.4rem;
+  }
+}
+
+/*****************************/
+/* BELOW 544px (Phones) */
+/*****************************/
+
+@media (max-width: 34em) {
+  .logo-text {
+    display: none;
+  }
+}

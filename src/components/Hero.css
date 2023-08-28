@@ -1,0 +1,216 @@
+/* ****************************************************** HERO */
+/* HERO */
+
+.section-hero {
+  background-color: #9ab8aa;
+  padding: 9.6rem 0;
+}
+.hero {
+  max-width: 134rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.2rem;
+}
+
+.hero-div--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.heading-primary {
+  color: #02361d;
+  color: #034d2a;
+
+  font-weight: 700;
+  font-size: 9.2rem;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.6rem;
+  font-family: "Lobster", sans-serif;
+}
+.hero-subhead {
+  color: #034d2a;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+
+.hero-div--left p {
+  color: #034d2a;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.hero-signup-div {
+  margin-top: 2.4rem;
+}
+.hero-signup:link,
+.hero-signup:visited {
+  padding: 1.2rem 2.4rem;
+
+  background-color: #034d2a;
+  color: #e6edea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: 1px solid #1c5f3f;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.hero-signup:hover,
+.hero-signup:active {
+  background-color: #9ab8aa;
+  color: #034d2a;
+}
+
+.hero-div--right {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+/*****************************/
+/* BELOW 1344px (Smaller desktops) */
+/*****************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+/*****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*****************************/
+@media (max-width: 75em) {
+  .hero-div--left {
+    padding-left: 3.6rem;
+  }
+
+  .heading-primary {
+    font-size: 7.2rem;
+  }
+}
+
+/*****************************/
+/* BELOW 944px (Tablets) */
+/*****************************/
+@media (max-width: 59em) {
+  .section-hero {
+    padding: 4.8rem 0;
+  }
+  .hero {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  .hero-div--left {
+    gap: 3.6rem;
+  }
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+  .hero-subhead {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-div--left p {
+    font-size: 2rem;
+    width: 75%;
+  }
+
+  .hero-div--left {
+    padding-left: 3.6rem;
+  }
+}
+
+/*****************************/
+/* BELOW 704px (Smaller Tablets) */
+/*****************************/
+
+@media (max-width: 44em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-div--left {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3.6rem;
+    width: 100%;
+    padding: 4.8rem;
+  }
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+  .hero-subhead {
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-div--left p {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+}
+
+/*****************************/
+/* BELOW 544px (Phones) */
+/*****************************/
+
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 3.2rem 0;
+  }
+
+  .hero-div--left {
+    width: 100%;
+    gap: 3.2rem;
+  }
+
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+
+  .hero-div--left p {
+    font-size: 2rem;
+  }
+
+  .hero-signup-div {
+    margin-top: 4.8rem;
+  }
+  .hero-signup:link,
+  .hero-signup:visited {
+    padding: 0.8rem 1.6rem;
+
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  .hero-img {
+    width: 50%;
+  }
+}
