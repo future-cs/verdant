@@ -4,7 +4,7 @@ import { HiMagnifyingGlass, HiBars3, HiOutlineXMark } from "react-icons/hi2";
 
 function HeaderComponent({ onSearch, isSticky, onHome }) {
   const [navInput, setNavInput] = useState("");
-  const [openNav, setOpenNav] = useState(false);
+  const [openNav, setOpenNav] = useState(true);
 
   function handleScroll(e, id) {
     e.preventDefault();

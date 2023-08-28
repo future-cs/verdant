@@ -48,7 +48,7 @@ export default function SearchList({ searchURL, onArticle }) {
       <div className="list" id="list">
         <div className="list-header">
           <span className="list-subhead">
-            {fetchedData.length} results for yout search.
+            {fetchedData.length} results for your search.
           </span>
         </div>
         {NoResults ? <NoResults /> : <></>}

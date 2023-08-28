@@ -8,9 +8,9 @@ export default function How() {
       <div className="how" id="how">
         <div className="how-header">
           <span className="how-subhead">
-            The Best Databade in the Whole World
+            The Best Database in the Whole World
           </span>
-          <h2>Celebrate the Builty of Plants</h2>
+          <h2>Celebrate the Beauty of Plants</h2>
         </div>
         <div className="section-how-content">
           <div className="section-how-img-div">
