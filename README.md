@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Verdant - Portfolio React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technology Stack
 
-## Available Scripts
+- REACT
+- JS
+- HTML
+- CSS
 
-In the project directory, you can run:
+## Features Overview
 
-### `npm start`
+1. Dynamic API Integration
+   Immerse yourself in a wealth of botanical data with our API integration. Our user-friendly interface allows you to effortlessly search for and retrieve plant information from our extensive database. Whether you're seeking details about specific species or curious about plant families, our API-powered search ensures you have the information you need at your fingertips.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Interactive Plant List
+   Explore a curated list of plants that match your search criteria. Our intuitive interface presents search results in an organized and visually appealing format. Each entry provides a snapshot of essential information, inviting you to click through for more detailed insights.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Comprehensive Plant Articles
+   Dive deep into the fascinating world of plants with our immersive plant articles. Experience a full-screen display of information, where you'll find in-depth details about various plant species, their habitats, growth habits, and unique characteristics. Whether you're a novice or a botany enthusiast, our articles offer valuable insights to enrich your knowledge.
 
-### `npm test`
+4. Insightful FAQ Section
+   Got burning questions about plant care, propagation, or species identification? Our FAQ section has you covered. Compiled by experienced botanists and horticulturists, our frequently asked questions provide practical solutions to common plant-related queries. Consider it your go-to resource for troubleshooting and enhancing your plant-care skills.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Stay Informed with Daily Plant Emails
+   Stay connected to the plant world with our exciting subscription feature. Sign up for our daily email service, and receive a dose of plant information, tips, and trivia straight to your inbox. Cultivate your passion with our curated content and deepen your understanding of the botanical realm—all for free!
 
-### `npm run build`
+## Disclaimer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The information provided on this website is for general informational purposes only. This website is exclusively intended for portfolio purposes to showcase and demonstrate various skills and projects. While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please note that the content presented on this website is not meant to provide professional advice. It is solely intended to serve as a portfolio representation. You should always consult appropriate professionals for specific advice related to your situation.
 
-### `npm run eject`
+## **Acknowledgments: Grateful for Perenual API's Support**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A big thank you to the Perenual API (https://perenual.com/docs/api) for their fantastic help in my portfolio project, Verdant. They've generously shared their amazing plant data, making my project better for plant enthusiasts everywhere. Their organized data has made it easy for users to search and use plant info. This partnership has improved my project and the connection between users and the plant world. I'm thankful for the Perenual API's support, and I'm excited to continue this collaboration as I grow my plant-loving community.
