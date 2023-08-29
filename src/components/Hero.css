@@ -29,7 +29,7 @@
   line-height: 1;
   letter-spacing: 0.5px;
   margin-bottom: 1.6rem;
-  font-family: "Lobster", sans-serif;
+  /* font-family: "Lobster", sans-serif; */
 }
 .hero-subhead {
   color: #034d2a;
@@ -82,6 +82,63 @@
 .hero-img {
   width: 100%;
 }
+
+/* ****************************************************** SEARCH */
+
+.hero-search-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.hero-search-form {
+  display: flex;
+  gap: 0.6rem;
+
+  border-radius: 4px;
+  overflow: hidden;
+  /* padding: 0.6rem; */
+}
+.hero-search-form input {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+
+  font-size: 2.4rem;
+  width: 100%;
+  background-color: #cddbd4;
+}
+.hero-search-div button {
+  padding: 0.6rem 1.8rem;
+  font-size: 2rem;
+
+  border: none;
+  border-radius: 4px;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  background-color: #cddbd4;
+  color: #034d2a;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-search-div button:hover,
+.hero-search-div button:active {
+  background-color: #034d2a;
+  color: #e6edea;
+}
+
+.hero-search-div ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1.2rem;
+  list-style: none;
+}
+
 /*****************************/
 /* BELOW 1344px (Smaller desktops) */
 /*****************************/
@@ -190,6 +247,7 @@
   .hero-div--left {
     width: 100%;
     gap: 3.2rem;
+    padding: 0rem;
   }
 
   .heading-primary {
@@ -203,6 +261,12 @@
   .hero-signup-div {
     margin-top: 4.8rem;
   }
+
+  .hero-search-div ul {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
   .hero-signup:link,
   .hero-signup:visited {
     padding: 0.8rem 1.6rem;

@@ -9,10 +9,10 @@ export default function SearchItem({ content, onArticle }) {
           className="component-img--medium"
           src={
             content.default_image
-              ? content.default_image.regular_url
+              ? content.default_image.small_url
               : "img/9251D335-BFF2-4D65-8135-B945C749803E.png"
           }
-          alt={content.id}
+          alt={content.common_name}
         ></img>
       </div>
       <div className="text-div">

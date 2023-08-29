@@ -5,7 +5,7 @@ import SearchItem from "./SearchItem";
 // import { GiMonsteraLeaf } from "react-icons/gi";
 
 export default function SearchList({ searchURL, onArticle }) {
-  console.log(searchURL);
+  // console.log(searchURL);
   const [isLoading, setIsLoading] = useState(true);
   const [fetchedData, setFetchedData] = useState([]);
   const [NoResults, setNoResults] = useState(false);
@@ -60,7 +60,6 @@ export default function SearchList({ searchURL, onArticle }) {
                   key={item.id}
                   content={item}
                   onArticle={onArticle}
-                  // onFullviewCard={handleFullviewCard}
                 />
               ))}
             </div>
