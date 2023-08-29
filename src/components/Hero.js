@@ -22,11 +22,6 @@ export default function Hero({ onSearch }) {
             <span className="hero-subhead">
               Get inspired to create your own garden
             </span>
-            <p>
-              Embark on this botanical journey with us and watch your
-              fascination with plants flourish into expertise. Let's grow
-              together!
-            </p>
           </div>
           <div className="hero-search-div">
             <form

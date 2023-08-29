@@ -29,8 +29,8 @@
   line-height: 1;
   letter-spacing: 0.5px;
   margin-bottom: 1.6rem;
-  /* font-family: "Lobster", sans-serif; */
 }
+
 .hero-subhead {
   color: #034d2a;
   font-weight: 400;
@@ -52,31 +52,11 @@
 .hero-signup-div {
   margin-top: 2.4rem;
 }
-.hero-signup:link,
-.hero-signup:visited {
-  padding: 1.2rem 2.4rem;
-
-  background-color: #034d2a;
-  color: #e6edea;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border: 1px solid #1c5f3f;
-  border-radius: 4px;
-  transition: all 0.3s;
-}
-.hero-signup:hover,
-.hero-signup:active {
-  background-color: #9ab8aa;
-  color: #034d2a;
-}
 
 .hero-div--right {
+  display: flex;
+  align-items: center;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.2rem;
 }
 
 .hero-img {
@@ -97,7 +77,6 @@
 
   border-radius: 4px;
   overflow: hidden;
-  /* padding: 0.6rem; */
 }
 .hero-search-form input {
   padding: 0.6rem 1.2rem;
@@ -153,12 +132,21 @@
 /* BELOW 1200px (Landscape Tablets) */
 /*****************************/
 @media (max-width: 75em) {
+  .hero {
+    grid-template-columns: 3fr 2fr;
+    gap: 6.2rem;
+  }
+
   .hero-div--left {
-    padding-left: 3.6rem;
+    padding: 9.6rem 0;
   }
 
   .heading-primary {
     font-size: 7.2rem;
+  }
+
+  .hero-img {
+    width: 75%;
   }
 }
 
@@ -167,19 +155,15 @@
 /*****************************/
 @media (max-width: 59em) {
   .section-hero {
-    padding: 4.8rem 0;
+    padding: 9.6rem 0;
   }
   .hero {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-
-    grid-template-columns: 1fr 1fr;
-    gap: 3.2rem;
+    grid-template-columns: 2fr 1fr;
   }
 
   .hero-div--left {
     gap: 3.6rem;
+    text-align: center;
   }
   .heading-primary {
     font-size: 6.2rem;
@@ -197,6 +181,10 @@
   .hero-div--left {
     padding-left: 3.6rem;
   }
+
+  .hero-img {
+    width: 75%;
+  }
 }
 
 /*****************************/
@@ -209,11 +197,7 @@
   }
 
   .hero-div--left {
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 3.6rem;
+    gap: 6.2rem;
     width: 100%;
     padding: 4.8rem;
   }
@@ -230,8 +214,18 @@
     width: 100%;
   }
 
+  .hero-search-div {
+    justify-content: center;
+    padding: 0 2.4rem;
+  }
+
+  .hero-search-div ul {
+    display: flex;
+    justify-content: center;
+  }
+
   .hero-img {
-    width: 75%;
+    width: 50%;
   }
 }
 
@@ -241,7 +235,7 @@
 
 @media (max-width: 34em) {
   .section-hero {
-    padding: 3.2rem 0;
+    padding: 9.6rem 0;
   }
 
   .hero-div--left {
@@ -255,25 +249,24 @@
   }
 
   .hero-div--left p {
-    font-size: 2rem;
-  }
-
-  .hero-signup-div {
-    margin-top: 4.8rem;
+    font-size: 2.2rem;
   }
 
   .hero-search-div ul {
     flex-wrap: wrap;
+    text-align: center;
     gap: 0.6rem;
   }
 
-  .hero-signup:link,
-  .hero-signup:visited {
-    padding: 0.8rem 1.6rem;
-
-    font-weight: 600;
-    font-size: 1.6rem;
+  .hero-search-form input {
+    padding: 0.6rem 1.2rem;
+    border: none;
   }
+  .hero-search-div button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.8rem;
+  }
+
   .hero-img {
     width: 50%;
   }
