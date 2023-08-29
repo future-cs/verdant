@@ -7,9 +7,8 @@ import SearchList from "./components/SearchList";
 import CTA from "./components/CTA";
 import FooterComponent from "./components/Footer";
 import Article from "./components/Article";
-
 import BackToTop from "./components/BackToTop";
-import { FAQ } from "./components/FAQ";
+import FAQ from "./components/FAQ";
 
 function App() {
   const [search, setSearch] = useState(false);
@@ -40,7 +39,7 @@ function App() {
   function handleSearch(searchInput) {
     const text = searchInput;
     const edited = text.trim().replace(/ /g, "&");
-    const curSearchURL = `https://perenual.com/api/species-list?key=sk-Sw6j64b3059ecc0811570&q=${edited}`;
+    const curSearchURL = `https://perenual.com/api/species-list?key=${process.env.REACT_APP_API_KEY}&q=${edited}`;
     setSearchURL(curSearchURL);
     setSearch(true);
     setArticle(false);
@@ -48,7 +47,7 @@ function App() {
   }
 
   function handleArticle(id) {
-    const curSearchURL = `https://perenual.com/api/species/details/${id}?key=sk-Sw6j64b3059ecc0811570`;
+    const curSearchURL = `https://perenual.com/api/species/details/${id}?key=${process.env.REACT_APP_API_KEY}`;
     setSearch(false);
     setArticle(true);
     setArticleURL(curSearchURL);
@@ -86,6 +85,7 @@ function App() {
       ) : (
         <Hero onSearch={handleSearch} />
       )}
+
       {search || article || FAQSection ? <></> : <How />}
       {search ? (
         <SearchList searchURL={searchURL} onArticle={handleArticle} />

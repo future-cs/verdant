@@ -1,6 +1,6 @@
 import React from "react";
 
-export function FAQ() {
+export default function FAQ() {
   return (
     <div className="section-how" id="how">
       <div className="how" id="how">
