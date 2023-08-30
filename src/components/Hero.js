@@ -40,7 +40,7 @@ export default function Hero({ onSearch }) {
             </form>
             <ul>
               <li>
-                <p>Sugestions:</p>
+                <p>Suggestions:</p>
               </li>
               <li>
                 <button onClick={() => onSearch("maple")}>Maple</button>

@@ -9,20 +9,15 @@
 
 ## Features Overview
 
-1. Dynamic API Integration
-   Immerse yourself in a wealth of botanical data with our API integration. Our user-friendly interface allows you to effortlessly search for and retrieve plant information from our extensive database. Whether you're seeking details about specific species or curious about plant families, our API-powered search ensures you have the information you need at your fingertips.
+1. Dynamic API Integration: Immerse yourself in a wealth of botanical data with our API integration. Our user-friendly interface allows you to effortlessly search for and retrieve plant information from our extensive database. Whether you're seeking details about specific species or curious about plant families, our API-powered search ensures you have the information you need at your fingertips.
 
-2. Interactive Plant List
-   Explore a curated list of plants that match your search criteria. Our intuitive interface presents search results in an organized and visually appealing format. Each entry provides a snapshot of essential information, inviting you to click through for more detailed insights.
+2. Interactive Plant List: Explore a curated list of plants that match your search criteria. Our intuitive interface presents search results in an organized and visually appealing format. Each entry provides a snapshot of essential information, inviting you to click through for more detailed insights.
 
-3. Comprehensive Plant Articles
-   Dive deep into the fascinating world of plants with our immersive plant articles. Experience a full-screen display of information, where you'll find in-depth details about various plant species, their habitats, growth habits, and unique characteristics. Whether you're a novice or a botany enthusiast, our articles offer valuable insights to enrich your knowledge.
+3. Comprehensive Plant Articles: Dive deep into the fascinating world of plants with our immersive plant articles. Experience a full-screen display of information, where you'll find in-depth details about various plant species, their habitats, growth habits, and unique characteristics. Whether you're a novice or a botany enthusiast, our articles offer valuable insights to enrich your knowledge.
 
-4. Insightful FAQ Section
-   Got burning questions about plant care, propagation, or species identification? Our FAQ section has you covered. Compiled by experienced botanists and horticulturists, our frequently asked questions provide practical solutions to common plant-related queries. Consider it your go-to resource for troubleshooting and enhancing your plant-care skills.
+4. Insightful FAQ Section: Do you have questions about plant care, propagation, or species identification? Our FAQ section has you covered. Compiled by experienced botanists and horticulturists, our frequently asked questions provide practical solutions to common plant-related queries. Consider it your go-to resource for troubleshooting and enhancing your plant-care skills.
 
-5. Stay Informed with Daily Plant Emails
-   Stay connected to the plant world with our exciting subscription feature. Sign up for our daily email service, and receive a dose of plant information, tips, and trivia straight to your inbox. Cultivate your passion with our curated content and deepen your understanding of the botanical realm—all for free!
+5. Stay Informed with Daily Plant Emails: Stay connected to the plant world with our exciting subscription feature. Sign up for our daily email service, and receive a dose of plant information, tips, and trivia straight to your inbox. Cultivate your passion with our curated content and deepen your understanding of the botanical realm—all for free!
 
 ## Disclaimer
 
